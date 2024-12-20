@@ -1,10 +1,12 @@
 # Credit_Card_Financial_Dashboard
 Power BI Dashboard
 Project Objective: To develop a comprehensive credit card dashboard that provides real-time insights into key performance metrics and trends, enabling stakeholders to monitor and analyze credit card operations effectively.
-steps: 
+
+# Steps: 
 Load the Data set into the Power BI Desktop application.
 Understand the data and based on understanding add more columns for better analysis.
-Dax Queries: 
+
+# Dax Queries: 
 1- AgeGroup = SWITCH(
 TRUE(),
 'public cust_detail'[customer_age] < 30, "20-30",
@@ -39,7 +41,7 @@ FILTER(
 ALL('public cc_detail'),
 'public cc_detail'[week_num2] = MAX('public cc_detail'[week_num2])-1))
 
-Insights:
+# Insights:
 • Overall revenue is 55M
 • Total interest is 7.8M
 • Total transaction amount is 46M
